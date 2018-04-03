@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Beautiful design tables in HTML in the style of a zebra.</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+<div id="container">   
+
+	<table class="zebra">
+    <caption>Beautiful design tables in HTML in the style of a zebra.</caption>
+		<thead>
+        	<tr>
+				<th>Date</th>
+				<th>Start time</th>
+				<th>End time</th>
+				<th>Name</th>
+                <th>Music Preview</th>
+            </tr>
+		</thead>
+        <tbody>
+        	<tr>
+            	<td>02.06.2010</td>
+                <td>10:00</td>
+                <td>12:00</td>
+                <td>Cleaning</td>
+                <td>
+                    <audio id="music1">
+                      <source src="https://api.soundcloud.com/tracks/300204575/download?secret_token=s-grpT3&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button onclick="playAudio(1)" id="control-btn1" class="play-btn play material-icons">play_circle_outline</button>
+                </td>
+            </tr>
+            <tr>
+            	<td>02.06.2010</td>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>Training</td>
+                <td>
+                    <audio id="music2">
+                      <source src="https://api.soundcloud.com/tracks/312923139/download?secret_token=s-SWkrr&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button onclick="playAudio(2)" id="control-btn2" class="play-btn play material-icons">play_circle_outline</button>
+                </td>
+            </tr>
+            <tr>
+            	<td>02.06.2010</td>
+                <td>15:00</td>
+                <td>17:00</td>
+                <td>Rest</td>
+                <td>
+                    <audio id="music3">
+                      <source src="https://api.soundcloud.com/tracks/176698819/download?secret_token=s-WXByQ&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button onclick="playAudio(3)" id="control-btn3" class="play-btn play material-icons">play_circle_outline</button>
+                </td>
+            </tr>
+            <tr>
+            	<td>02.06.2010</td>
+                <td>17:00</td>
+                <td>21:00</td>
+                <td>Work</td>
+                <td>
+                    <audio id="music4">
+                      <source src="https://api.soundcloud.com/tracks/207611046/download?secret_token=s-DQGAf&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button onclick="playAudio(4)" id="control-btn4" class="play-btn play material-icons">play_circle_outline</button>
+                </td>
+            </tr>
+            <tr>
+            	<td>02.06.2010</td>
+                <td>21:00</td>
+                <td>07:00</td>
+                <td>Sleep</td>
+                <td>
+                    <audio id="music5">
+                      <source src="https://api.soundcloud.com/tracks/265038774/download?secret_token=s-zxmL4&client_id=LBCcHmRB8XSStWL6wKH2HPACspQlXg2P" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button onclick="playAudio(5)" id="control-btn5" class="play-btn play material-icons">play_circle_outline</button>
+                </td>
+            </tr>
+        </tbody>
+	</table>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
